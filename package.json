@@ -1,8 +1,8 @@
 {
     "name": "helloworld",
-    "displayName": "HelloCordova",
+    "displayName": "cordova && webpack && react js",
     "version": "1.0.0",
-    "description": "workshop oyez t team",
+    "description": "workshop oyez t team , med gannouni",
     "scripts": {
         "build": "npm run prod && cordova run android",
         "dev": "webpack-dev-server",

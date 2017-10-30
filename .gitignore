@@ -1,0 +1,7 @@
+.idea/
+platforms/
+node_modules
+/nbproject/private/
+/nbproject/
+/plugins
+package-lock.json
