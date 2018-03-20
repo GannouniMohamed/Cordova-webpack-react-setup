@@ -1,39 +1,47 @@
 {
-    "name": "helloworld",
-    "displayName": "cordova && webpack && react js",
-    "version": "1.0.0",
-    "description": "workshop oyez t team , med gannouni",
-    "scripts": {
-        "build": "npm run prod && cordova run android",
-        "dev": "webpack-dev-server",
-        "prod": "npm run clean && webpack -p",
-        "clean": " rimraf  ./www/js/*"
+  "name": "helloworld",
+  "displayName": "cordova && webpack && react js",
+  "version": "1.0.0",
+  "description": "workshop oyez t team , med gannouni",
+  "scripts": {
+    "build": "npm run prod && cordova run android",
+    "dev": "webpack-dev-server",
+    "prod": "npm run clean && webpack -p",
+    "clean": " rimraf  ./www/js/*"
+  },
+  "author": "oyez t team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^2.30.1",
+    "json-loader": "^0.5.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "cordova-android": "^6.2.3",
+    "cordova-plugin-whitelist": "^1.3.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
     },
-    "author": "oyez t team",
-    "license": "Apache-2.0",
-    "devDependencies": {
-        "babel": "^6.23.0",
-        "babel-core": "^6.26.0",
-        "babel-loader": "^7.1.2",
-        "babel-preset-es2015": "^6.24.1",
-        "babel-preset-react": "^6.24.1",
-        "html-webpack-plugin": "^2.30.1",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
-        "rimraf": "^2.6.2",
-        "webpack": "^3.8.1",
-        "webpack-dev-server": "^2.9.3"
-    },
-    "dependencies": {
-        "cordova-android": "^6.2.3",
-        "cordova-plugin-whitelist": "^1.3.2"
-    },
-    "cordova": {
-        "plugins": {
-            "cordova-plugin-whitelist": {}
-        },
-        "platforms": [
-            "android"
-        ]
-    }
+    "platforms": [
+      "android"
+    ]
+  }
 }

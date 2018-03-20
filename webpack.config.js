@@ -14,12 +14,31 @@ module.exports = {
       template: 'template.html'
     })
   ], 
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
+  },
     module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx|json)$/,
         exclude: /node_modules/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.css$/,
+        use: 'css-loader'
+      },
+      {
+        test: /\.json?$/,
+        loader: "json-loader"
+      },
+      {
+        test: /\.xml?$/,
+        loader: 'xml-loader'
+      },
+      {
+        test: /\.(png|jpg|ttf)?$/,
+        loader: 'file-loader?name=[path][name].[ext]'
       }
     ]
   },
